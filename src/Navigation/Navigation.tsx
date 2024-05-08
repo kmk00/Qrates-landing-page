@@ -7,7 +7,7 @@ import fbIcon from "../assets/facebook.svg";
 import igIcon from "../assets/instagram.svg";
 import twIcon from "../assets/twitter.svg";
 import arrowIcon from "../assets/chevron-up.svg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Image = styled.img.attrs({
   src: `${logo}`,
