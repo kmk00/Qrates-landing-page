@@ -226,31 +226,32 @@ const NavigationComponent = () => {
             <MenuIcon onClick={toggleMenu} alt="icon" src={menuIcon} />
           </Container>
         </ContainerBetween>
-        {showMenu && <Menu />}
-        <Menu>
-          <Label onChange={toggleSubMenu}>
-            <Text>DISCOVER MUSIC</Text>
-            <Input type="checkbox" />
-            <ArrowIcon alt="icon" src={arrowIcon} />
-          </Label>
-          {showSubMenu && (
-            <DiscoverSubMenu>
-              <Link href="#">Records</Link>
-              <Link href="#">Cassettes</Link>
-              <Link href="#">Stories</Link>
-              <Link href="#">Qrates Curated</Link>
-            </DiscoverSubMenu>
-          )}
-          <Link href="#">FOR ARTISTS</Link>
-          <Link href="#">FOR FANS</Link>
-          <Container>
-            <SocialIcon alt="icon" src={fbIcon} />
-            <SocialIcon alt="icon" src={igIcon} />
-            <SocialIcon alt="icon" src={twIcon} />
-          </Container>
-          <MobileButton>LOG IN</MobileButton>
-          <MobileButton $primary>MAKE YOUR OWN</MobileButton>
-        </Menu>
+        {showMenu && (
+          <Menu>
+            <Label onChange={toggleSubMenu}>
+              <Text>DISCOVER MUSIC</Text>
+              <Input type="checkbox" />
+              <ArrowIcon alt="icon" src={arrowIcon} />
+            </Label>
+            {showSubMenu && (
+              <DiscoverSubMenu>
+                <Link href="#">Records</Link>
+                <Link href="#">Cassettes</Link>
+                <Link href="#">Stories</Link>
+                <Link href="#">Qrates Curated</Link>
+              </DiscoverSubMenu>
+            )}
+            <Link href="#">FOR ARTISTS</Link>
+            <Link href="#">FOR FANS</Link>
+            <Container>
+              <SocialIcon alt="icon" src={fbIcon} />
+              <SocialIcon alt="icon" src={igIcon} />
+              <SocialIcon alt="icon" src={twIcon} />
+            </Container>
+            <MobileButton>LOG IN</MobileButton>
+            <MobileButton $primary>MAKE YOUR OWN</MobileButton>
+          </Menu>
+        )}
       </NavigationMobile>
     </Header>
   );
