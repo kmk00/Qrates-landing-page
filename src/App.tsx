@@ -1,4 +1,5 @@
-import Hero from "./Hero";
+import Formats from "./components/Formats";
+import Hero from "./components/Hero";
 import Navigation from "./Navigation/Navigation";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navigation />
       <Hero />
+      <Formats />
     </>
   );
 }

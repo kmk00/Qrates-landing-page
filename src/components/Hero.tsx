@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import image1 from "./assets/hero1.jpg";
-import image2 from "./assets/hero2.png";
-import svg from "./assets/herosvg.svg";
+import image1 from "../assets/hero1.jpg";
+import image2 from "../assets/hero2.png";
+import svg from "../assets/herosvg.svg";
 
 const HeroContainer = styled.div`
   max-width: 1500px;
@@ -48,10 +48,6 @@ const FlexContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
-`;
-
-const ColumnContainer = styled(FlexContainer)`
-  flex-direction: row;
 `;
 
 const Image1 = styled.div`
