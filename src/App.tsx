@@ -1,3 +1,4 @@
+import Community from "./components/Community";
 import Formats from "./components/Formats";
 import Hero from "./components/Hero";
 import LearnMore from "./components/LearnMore";
@@ -15,6 +16,7 @@ function App() {
       {/* Component */}
       <StartNewProject />
       <LearnMore />
+      <Community />
     </>
   );
 }

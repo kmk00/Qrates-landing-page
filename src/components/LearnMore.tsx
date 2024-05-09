@@ -18,28 +18,30 @@ const SectionCard = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 1rem;
+  padding: 4rem 2rem;
 
   &:nth-child(1) {
     background-color: #81836c;
+    border-right: 3px solid #000;
   }
 
   &:nth-child(2) {
     background-color: #f8d8d8;
   }
 
-  border-right: 3px solid #000;
-
   @media (max-width: 1000px) {
     padding: 2rem;
     margin: 0 auto;
     border-right: none;
     border-bottom: 3px solid #000;
+
+    &:nth-child(1) {
+      border-right: none;
+    }
   }
 `;
 
 const ImageComponent = styled.div`
-  margin-top: 3rem;
   max-width: 500px;
 
   img {
