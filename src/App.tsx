@@ -1,4 +1,5 @@
 import Community from "./components/Community";
+import FooterComponent from "./components/FooterComponent";
 import Formats from "./components/Formats";
 import Hero from "./components/Hero";
 import LearnMore from "./components/LearnMore";
@@ -21,6 +22,7 @@ function App() {
       <Community />
       <Testimonials />
       <TryItNow />
+      <FooterComponent />
     </>
   );
 }
