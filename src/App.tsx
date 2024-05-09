@@ -5,6 +5,7 @@ import LearnMore from "./components/LearnMore";
 import Slogan from "./components/Slogan";
 import StartNewProject from "./components/StartNewProject";
 import Testimonials from "./components/Testimonials";
+import TryItNow from "./components/TryItNow";
 import Navigation from "./Navigation/Navigation";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <LearnMore />
       <Community />
       <Testimonials />
+      <TryItNow />
     </>
   );
 }
