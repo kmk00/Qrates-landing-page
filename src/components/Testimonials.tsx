@@ -1,12 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 
 import image1 from "../assets/testimonial1.jpg";
 import image2 from "../assets/testimonial2.jpg";
 import TestimonialCard from "./TestimonialCard";
 
-const Section = styled.section`
-  background-color: #fff804;
+interface SectionProps {
+  currentPage: number;
+}
+
+const Section = styled.section<SectionProps>`
+  background-color: ${({ currentPage }) =>
+    currentPage === 1 ? "#fff804" : "#ff6711"};
+
   border-top: 3px solid #000;
   display: flex;
   justify-content: center;
@@ -25,7 +31,7 @@ const Testimonials = () => {
   };
 
   return (
-    <Section>
+    <Section currentPage={currentPage}>
       {currentPage === 1 ? (
         <TestimonialCard
           image={image1}

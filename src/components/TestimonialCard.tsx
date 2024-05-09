@@ -11,12 +11,14 @@ interface TestimonialCardProps {
 const SectionCard = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 2rem;
 
-  gap: 8rem;
+  gap: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     flex-direction: column-reverse;
-    gap: 0;
+    gap: 2rem 0;
   }
 
   @media (min-width: 1200px) {

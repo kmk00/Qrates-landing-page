@@ -13,11 +13,7 @@ const Section = styled.section`
 
 const SectionCard = styled.div`
   flex-basis: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+
   padding: 4rem 2rem;
 
   &:nth-child(1) {
@@ -48,6 +44,20 @@ const ImageComponent = styled.div`
     width: 100%;
     height: auto;
   }
+
+  @media (max-width: 1000px) {
+    max-width: 100%;
+  }
+`;
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
 
   @media (max-width: 1000px) {
     max-width: 100%;
@@ -85,28 +95,32 @@ const LearnMore = () => {
   return (
     <Section>
       <SectionCard>
-        <ImageComponent>
-          <img src={image1} alt="image1" />
-        </ImageComponent>
-        <TitleButton>ARTIST TOOLKIT</TitleButton>
-        <H2>Take you and your works to next level.</H2>
-        <Text>
-          We have a lot of informations and tips about music production,
-          physical format and music business for you.
-        </Text>
-        <Button>LEARN MORE</Button>
+        <Content>
+          <ImageComponent>
+            <img src={image1} alt="image1" />
+          </ImageComponent>
+          <TitleButton>ARTIST TOOLKIT</TitleButton>
+          <H2>Take you and your works to next level.</H2>
+          <Text>
+            We have a lot of informations and tips about music production,
+            physical format and music business for you.
+          </Text>
+          <Button>LEARN MORE</Button>
+        </Content>
       </SectionCard>
       <SectionCard>
-        <ImageComponent>
-          <img src={image2} alt="image2" />
-        </ImageComponent>
-        <TitleButton>CUSTOMER SUPPORT</TitleButton>
-        <H2>Here to help, whenever you need it.</H2>
-        <Text>
-          Whether you’re an artist in the middle of product, or a fan with
-          questions about your order; our team is here to help.
-        </Text>
-        <Button>CONTACT US</Button>
+        <Content>
+          <ImageComponent>
+            <img src={image2} alt="image2" />
+          </ImageComponent>
+          <TitleButton>CUSTOMER SUPPORT</TitleButton>
+          <H2>Here to help, whenever you need it.</H2>
+          <Text>
+            Whether you’re an artist in the middle of product, or a fan with
+            questions about your order; our team is here to help.
+          </Text>
+          <Button>CONTACT US</Button>
+        </Content>
       </SectionCard>
     </Section>
   );
