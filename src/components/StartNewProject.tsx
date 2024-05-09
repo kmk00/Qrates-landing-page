@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import arrowRight from "../assets/arrowright.svg";
-import arrowDown from "../assets/arrowdown.svg";
 
 const Section = styled.section`
   background-color: #000;
