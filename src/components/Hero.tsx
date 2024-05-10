@@ -26,6 +26,10 @@ const H1 = styled.h1`
   color: #fff;
   font-size: 64px;
   margin: 1rem 0;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -33,6 +37,10 @@ const Paragraph = styled.p`
   font-size: 24px;
   margin-top: 3rem;
   line-height: 1.5;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -71,6 +79,12 @@ const Image1 = styled.div`
     }
   }
 
+  @media (max-width: 420px) {
+    img {
+      width: 200px;
+    }
+  }
+
   @media (min-width: 1200px) {
     img {
       width: 700px;
@@ -96,6 +110,12 @@ const Image2 = styled.div`
     }
   }
 
+  @media (max-width: 420px) {
+    img {
+      width: 200px;
+    }
+  }
+
   @media (min-width: 1200px) {
     margin-left: 5rem;
     img {
@@ -118,10 +138,18 @@ const Image3 = styled.div`
     transform: rotate(2deg);
   }
 
+  @media (max-width: 420px) {
+    bottom: 10rem;
+    right: 0;
+
+    img {
+      margin-left: 3rem;
+      width: 70%;
+    }
+  }
+
   @media (max-width: 1200px) {
     left: auto;
-    img {
-    }
   }
 `;
 

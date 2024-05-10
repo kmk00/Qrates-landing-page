@@ -8,15 +8,15 @@ const Section = styled.section`
 
 const H1 = styled.h1`
   color: #000;
-  font-size: 40px;
-  padding: 5rem;
+  font-size: clamp(20px, 7vw, 3rem);
+  padding: 2rem;
   text-align: center;
   border-bottom: 3px solid #000;
 `;
 
 const H2 = styled.h2`
   color: #000;
-  font-size: 40px;
+  font-size: clamp(16px, 7vw, 2rem);
   text-align: center;
   margin-top: 2rem;
 `;
@@ -27,7 +27,6 @@ const FormatComponent = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  padding: 2rem;
   max-width: 700px;
 `;
 
@@ -50,7 +49,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: 20px;
+  font-size: clamp(12px, 5vw, 1.5rem);
   text-align: center;
   letter-spacing: 3px;
 

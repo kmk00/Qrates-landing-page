@@ -4,7 +4,7 @@ const P = styled.p`
   font-size: 64px;
 
   @media (max-width: 768px) {
-    font-size: 44px;
+    font-size: 32px;
   }
 `;
 
