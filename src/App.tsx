@@ -3,6 +3,7 @@ import FooterComponent from "./components/FooterComponent";
 import Formats from "./components/Formats";
 import Hero from "./components/Hero";
 import LearnMore from "./components/LearnMore";
+import Progress from "./components/Progress";
 import Slogan from "./components/Slogan";
 import StartNewProject from "./components/StartNewProject";
 import Testimonials from "./components/Testimonials";
@@ -16,7 +17,7 @@ function App() {
       <Hero />
       <Formats />
       <Slogan />
-      {/* Component */}
+      <Progress />
       <StartNewProject />
       <LearnMore />
       <Community />
