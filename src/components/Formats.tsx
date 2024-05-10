@@ -28,6 +28,7 @@ const FormatComponent = styled.div`
   align-items: center;
   gap: 3rem;
   padding: 2rem;
+  max-width: 700px;
 `;
 
 const Container = styled.div`
