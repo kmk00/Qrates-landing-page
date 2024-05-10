@@ -16,6 +16,10 @@ const Container = styled.div<{ number: number }>`
     border-left: ${(props) =>
       props.number === 1 || props.number === 2 ? "none" : "3px solid #000"};
   }
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Number = styled.div`

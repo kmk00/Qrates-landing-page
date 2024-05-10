@@ -23,6 +23,10 @@ const H2 = styled.h2`
   font-size: 36px;
   text-align: center;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const Text = styled.p`

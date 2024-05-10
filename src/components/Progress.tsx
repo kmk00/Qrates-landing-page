@@ -46,6 +46,14 @@ const RightSide = styled.div`
   @media (max-width: 1000px) {
     margin-right: 1rem;
     border-right: 3px solid #000;
+
+    & > ${Wrapper} {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    border-left: 3px solid #000;
   }
 `;
 
@@ -63,11 +71,11 @@ const DesktopContainer = styled.div`
   }
 
   & > ${Container}:first-child > ${LeftSide} {
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
 
   & > ${Container}:first-child > ${RightSide} {
-    padding-left: 2rem;
+    padding-right: 1rem;
   }
 `;
 
@@ -102,6 +110,10 @@ const MobileContainer = styled.div`
 
     & > ${Container} > ${RightSide}:first-child {
       border-left: 3px solid #000;
+    }
+
+    & > ${Container}:last-child {
+      padding-left: 0;
     }
 
     & > ${Container} {
