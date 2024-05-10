@@ -61,6 +61,14 @@ const DesktopContainer = styled.div`
   @media (max-width: 1000px) {
     display: none;
   }
+
+  & > ${Container}:first-child > ${LeftSide} {
+    padding-right: 2rem;
+  }
+
+  & > ${Container}:first-child > ${RightSide} {
+    padding-left: 2rem;
+  }
 `;
 
 const MobileContainer = styled.div`
