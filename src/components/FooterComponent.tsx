@@ -105,6 +105,20 @@ const Icon = styled.div`
   border-radius: 50%;
 `;
 
+const Select = styled.select`
+  border: 2px solid #fff;
+  font-size: 20px;
+  padding: 0.6rem;
+  background-color: transparent;
+  color: #fff;
+
+  & option {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+`;
+
 const FooterComponent = () => {
   return (
     <Footer>
@@ -188,12 +202,12 @@ const FooterComponent = () => {
       <BottomComponent>
         <img src={Logo} />
         <Container>
-          <select>
+          <Select>
             <option>English</option>
             <option>French</option>
             <option>Spanish</option>
             <option>Portuguese</option>
-          </select>
+          </Select>
           <SocialsIcons>
             <Icon>
               <img src={fbIcon} />
