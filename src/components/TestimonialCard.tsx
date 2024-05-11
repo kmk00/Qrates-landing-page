@@ -73,13 +73,13 @@ const Text = styled.p`
 `;
 
 interface ButtonProps {
-  highlight: boolean;
+  $highlight: boolean;
 }
 
 const Button = styled.button<ButtonProps>`
   border: 2px solid #000;
-  background-color: ${({ highlight }) => (highlight ? "#000" : "#fff")};
-  color: ${({ highlight }) => (highlight ? "#fff" : "#000")};
+  background-color: ${({ $highlight }) => ($highlight ? "#000" : "#fff")};
+  color: ${({ $highlight }) => ($highlight ? "#fff" : "#000")};
   font-size: 20px;
   border-radius: 50%;
   width: 40px;
@@ -113,10 +113,10 @@ const TestimonialCard = ({
           <Text>—{name}</Text>
         </TextContainer>
         <ButtonsContainer>
-          <Button highlight={currentPage === 1} onClick={action} value={1}>
+          <Button $highlight={currentPage === 1} onClick={action} value={1}>
             1
           </Button>
-          <Button highlight={currentPage === 2} onClick={action} value={2}>
+          <Button $highlight={currentPage === 2} onClick={action} value={2}>
             2
           </Button>
         </ButtonsContainer>

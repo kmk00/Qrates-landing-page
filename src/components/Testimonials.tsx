@@ -6,12 +6,14 @@ import image2 from "../assets/testimonial2.jpg";
 import TestimonialCard from "./TestimonialCard";
 
 interface SectionProps {
-  currentPage: number;
+  $currentPage: number;
 }
 
-const Section = styled.section<SectionProps>`
-  background-color: ${({ currentPage }) =>
-    currentPage === 1 ? "#fff804" : "#ff6711"};
+const Section = styled.section.attrs<SectionProps>((props) => ({
+  $currentPage: props.$currentPage,
+}))`
+  background-color: ${({ $currentPage }) =>
+    $currentPage === 1 ? "#fff804" : "#ff6711"};
 
   border-top: 3px solid #000;
   display: flex;
@@ -31,7 +33,7 @@ const Testimonials = () => {
   };
 
   return (
-    <Section currentPage={currentPage}>
+    <Section $currentPage={currentPage}>
       {currentPage === 1 ? (
         <TestimonialCard
           image={image1}

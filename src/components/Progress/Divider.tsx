@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled.div<{ number: number }>`
+const Container = styled.div<{ $number: number }>`
   position: relative;
   padding-top: 2rem;
   width: 100px;
@@ -11,10 +11,10 @@ const Container = styled.div<{ number: number }>`
 
   @media (max-width: 1000px) {
     border-bottom: ${(props) =>
-      props.number === 7 ? "3px solid #000" : "none"};
+      props.$number === 7 ? "3px solid #000" : "none"};
 
     border-left: ${(props) =>
-      props.number === 1 || props.number === 2 ? "none" : "3px solid #000"};
+      props.$number === 1 || props.$number === 2 ? "none" : "3px solid #000"};
   }
 
   @media (max-width: 500px) {
@@ -51,7 +51,7 @@ const ArrowWrapper = styled.div`
   height: 100%;
 `;
 
-const LeftBackground = styled.div<{ number: number }>`
+const LeftBackground = styled.div<{ $number: number }>`
   position: absolute;
   left: 0;
   top: 0;
@@ -63,11 +63,11 @@ const LeftBackground = styled.div<{ number: number }>`
     background-color: #fff804;
 
     background-color: ${(props) =>
-      props.number === 1 || props.number === 2 ? "#e4e5de" : "#fff804"};
+      props.$number === 1 || props.$number === 2 ? "#e4e5de" : "#fff804"};
   }
 `;
 
-const RightBackground = styled.div<{ number: number }>`
+const RightBackground = styled.div<{ $number: number }>`
   position: absolute;
   right: 0;
   top: 0;
@@ -78,7 +78,7 @@ const RightBackground = styled.div<{ number: number }>`
 
   @media (max-width: 1000px) {
     background-color: ${(props) =>
-      props.number === 1 || props.number === 2 ? "#e4e5de" : "#fff804"};
+      props.$number === 1 || props.$number === 2 ? "#e4e5de" : "#fff804"};
   }
 `;
 
@@ -93,9 +93,9 @@ const ArrowEndComponent = styled.div`
 
 const Divider = ({ number }: { number: number }) => {
   return (
-    <Container number={number}>
-      <LeftBackground number={number}></LeftBackground>
-      <RightBackground number={number}></RightBackground>
+    <Container $number={number}>
+      <LeftBackground $number={number}></LeftBackground>
+      <RightBackground $number={number}></RightBackground>
       <ArrowWrapper>
         <Number>{number}</Number>
         <Arrow></Arrow>
