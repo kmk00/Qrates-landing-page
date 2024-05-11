@@ -115,10 +115,6 @@ const MobileContainer = styled.div`
     & > ${Container}:last-child {
       padding-left: 0;
     }
-
-    & > ${Container} {
-      padding-left: 2rem;
-    }
   }
 `;
 
